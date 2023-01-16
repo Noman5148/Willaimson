@@ -1,0 +1,127 @@
+.resume{
+    padding: 3rem 4rem 2rem 4rem;
+    overflow: hidden;
+}
+.res-tittle{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.res-tittle h2{
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Nuosu SIL', serif;
+}
+.res-tittle p{
+    font-size: 15px;
+    font-weight: 400;
+    width: 50%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+}
+.resume-row{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.resume .timeline{
+    position: relative;
+}
+.resume .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    top: 28px;
+    width: 5px;
+    height: 90%;
+    background: #5540BF;
+    display: block;
+}
+.resume .timeline li{
+    display: table;
+    position: relative;
+}
+.resume .timeline ul li::before{
+    content: '\f19d';
+    font-family: "FontAwesome"; 
+    font-size: 18px;
+    line-height: 1.6;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    margin-left: -19px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: white;
+    color: #5540BF;
+    border: 4px solid #5540BF;
+    box-sizing: content-box;
+}
+.timeline ul li .content{
+    position: relative;
+    border: 3px solid #5540BF;
+    width: 85%;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+.resume .timeline ul li .content::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: -26px;
+    border-width: 10px 12px;
+    border-style: solid;
+    border-color: transparent #5540BF transparent transparent;
+}
+.content span{
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+    padding: 10px 15px;
+    color: #3c3c3c;
+}
+.content h4 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 15px 10px;
+    padding: 10px 0;
+    color: #5540BF;
+}
+.content p{
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 500;
+    text-align: left;
+    padding: 0 20px 20px;;
+    font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width:900px) {
+    .resume{
+        padding: 1rem 2rem 1rem 2rem;
+        overflow: hidden;
+    }
+    .res-tittle p{
+        width: 80%;
+    }
+    .resume-row{
+        grid-template-columns: 1fr;
+    }
+    .timeline ul li .content{
+        margin-bottom: 35px;
+        width: 95%;
+    }
+}
+@media screen and (max-width:768px){
+    .res-tittle p{
+        width: 100%;
+    }
+}

@@ -1,0 +1,130 @@
+.services{
+    height: 100%;
+    padding: 5rem 4rem 0 4rem;
+    overflow: hidden;
+}
+.ser-row{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.ser-col{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.single-ser{
+    padding: 0 20px 25px 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+.ser-tittle{
+    text-align: center;
+}
+.ser-tittle h2 {
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 35px;
+    font-family: 'Nuosu SIL', serif;
+    color: #3c3c3c;
+}
+.ser-tittle p{
+    font-size: 15px;
+    font-weight: 400;
+    width: 50%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding-bottom: 20px;
+}
+.top-line {
+    background: #bcbcbc;
+    height: 2px;
+    width: 44px;
+    margin: 0 auto;
+    margin-bottom: 4px;
+}
+.middle-line {
+    background: #bcbcbc;
+    height: 2px;
+    width: 80px;
+    margin: 0 auto;
+}
+.bottom-line {
+    background: #bcbcbc;
+    margin: 0 auto;
+    height: 2px;
+    width: 44px;
+    margin-top: 4px;
+}
+.service-desc{
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+}
+.service-desc p{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.service-desc h2{
+    font-weight: 600;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+}
+.ico-area {
+    position: relative;
+    top: -30px;
+    left: 0;
+    right: 0;
+}
+.ico-area i {
+    display: table;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 35px;
+    background: linear-gradient(65.38deg, #5540BF -1.92%, #A293F0 99.19%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #ffffff;
+    margin: auto;
+}
+@media screen and (max-width:1024px){
+    .ser-row{
+        grid-template-columns: 1fr 1fr;
+    }
+    .ser-tittle p{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px) {
+    .services{
+        padding: 0 1rem;
+    }
+    .ser-tittle p{
+        width: 100%;
+    }
+    .ser-tittle{
+        width: 100%;
+    }
+    .ser-tittle h2{
+        font-size: 40px;
+    }
+    .ser-row{
+        grid-template-columns: 1fr;
+    }
+    .ser-col{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .ico-area::after {
+        bottom: -29px;
+    }
+    .ico-area::before {
+        top: -29px;;
+    }
+}
